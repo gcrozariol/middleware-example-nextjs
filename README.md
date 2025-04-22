@@ -7,7 +7,7 @@ This project demonstrates how to handle public and private routes in a Next.js a
 1. Clone the repository:
 
   ```bash
-  git clone <repository-url>
+  git clone https://github.com/gcrozariol/middleware-example-nextjs.git
   cd middleware-example-nextjs
   ```
 
