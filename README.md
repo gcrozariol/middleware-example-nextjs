@@ -27,16 +27,16 @@ npm run dev
 
 The application will be available at `http://localhost:3000`.
 
-## Route Behavior
+## Route Behaviour
 
 ### Public and Private Routes
 
 - **Dashboard (`/dashboard`)**:  
-  - If there is no token in the cookies, the user will be redirected to the login page (`/login`).
+  - If there is no token in the cookies, the user will be redirected to the sign-in page (`/sign-in`).
   - If the user is authenticated (has a valid token), they can access the dashboard.
 
-- **Sign-In (`/login`)**:  
-  - If the user is not authenticated, they can access the login page.
+- **Sign-In (`/sign-in`)**:  
+  - If the user is not authenticated, they can access the sign-in page.
   - If the user is authenticated (has a valid token), they will be redirected to the dashboard.
 
 - **Pricing (`/pricing`)**:  
@@ -47,7 +47,7 @@ The application will be available at `http://localhost:3000`.
 ### Without a Token
 
 1. Clear your browser cookies or ensure no token is present.
-2. Try accessing `/dashboard`. You should be redirected to `/login`.
+2. Try accessing `/dashboard`. You should be redirected to `/sign-in`.
 3. Access `/pricing`. You should be able to view the page.
 
 ### With a Token
@@ -56,5 +56,5 @@ The application will be available at `http://localhost:3000`.
 2. Under "Storage," locate "Cookies" and select the domain for the application.
 3. Add a new cookie with the key `token` and set its value to any string.
 4. Refresh the page and try accessing `/dashboard`. You should be able to view the page.
-5. Try accessing `/login`. You should be redirected to `/dashboard`.
+5. Try accessing `/sign-in`. You should be redirected to `/dashboard`.
 6. Access `/pricing`. You should still be able to view the page.
